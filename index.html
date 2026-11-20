@@ -269,7 +269,7 @@ const PARAS=['Hey Ivy! Happy Birthday! ❤️','I wish I could be there to celeb
 function showNote(){
   ld.style.display='none';
   PARAS.forEach(t=>{const p=document.createElement('p');p.textContent=t;note.appendChild(p)});
-  const f=document.createElement('p');f.className='fin';f.textContent='Have a really good one!.';note.appendChild(f);
+  const f=document.createElement('p');f.className='fin';f.textContent='Have a really good one!';note.appendChild(f);
   const q=document.createElement('button');q.className='sur';q.textContent='click here for a surprise';q.onclick=openSurprise;note.appendChild(q);
   for(let k=0;k<40;k++)setTimeout(()=>drop(rnd(0,W),-10,1),300+k*140);
 }
