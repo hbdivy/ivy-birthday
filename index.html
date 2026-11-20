@@ -12,23 +12,23 @@
 html,body{height:100%;margin:0;overflow:hidden;background:radial-gradient(ellipse 90% 70% at 50% 105%,#33182a 0%,#150e1d 45%,var(--bg) 100%)}
 canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 55%,transparent 45%,rgba(0,0,0,.6) 100%)}
-.veil{position:fixed;inset:0;background:var(--bg);z-index:5;pointer-events:none;animation:fade 3s .2s ease forwards}
+.veil{position:fixed;inset:0;background:var(--bg);z-index:5;pointer-events:none;animation:fade 1.2s 0s ease forwards}
 .msg{position:fixed;left:0;right:0;top:calc(9% + env(safe-area-inset-top,0px));text-align:center;padding:0 24px;font-family:"Jost",system-ui,sans-serif;font-weight:300;color:var(--ink);pointer-events:none;z-index:2}
 .msg>*{margin:0;opacity:0}
-.a{text-transform:lowercase;font-size:clamp(14px,3.6vw,19px);letter-spacing:.42em;margin-right:-.42em;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.8);animation:rise 2.4s 3.4s ease forwards}
+.a{text-transform:lowercase;font-size:clamp(14px,3.6vw,19px);letter-spacing:.42em;margin-right:-.42em;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.8);animation:rise 1.2s 1.4s ease forwards}
 .n{margin:8px auto 0;opacity:1;width:min(78vw,500px);line-height:0}
 .n svg{width:100%;height:auto;display:block;overflow:visible}
 .s{fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 2px 10px rgba(0,0,0,.6));animation:draw var(--d) var(--t) cubic-bezier(.5,0,.3,1) forwards}
-.lf{fill:#b5e0bd;opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:leaf .9s cubic-bezier(.2,.9,.3,1.3) forwards}
-.bl{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:leaf 1.2s cubic-bezier(.2,.9,.3,1.3) forwards}
+.lf{fill:#b5e0bd;opacity:0;transform-box:fill-box;transform-origin:50% 100%;animation:leaf .6s cubic-bezier(.2,.9,.3,1.3) forwards}
+.bl{opacity:0;transform-box:fill-box;transform-origin:50% 50%;animation:leaf .8s cubic-bezier(.2,.9,.3,1.3) forwards}
 .rule{display:block;height:14px}
-.l{color:#fff;font-size:clamp(17px,4.2vw,22px);line-height:1.7;letter-spacing:.03em;text-shadow:0 2px 16px rgba(0,0,0,.9);animation:rise 2.6s 8.6s ease forwards}
-.l2{animation-delay:9.9s}
-.hint{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font:300 15px "Jost",system-ui,sans-serif;letter-spacing:.08em;color:rgba(255,255,255,.8);opacity:0;z-index:2;pointer-events:none;animation:rise 2s 9.5s ease forwards}
+.l{color:#fff;font-size:clamp(17px,4.2vw,22px);line-height:1.7;letter-spacing:.03em;text-shadow:0 2px 16px rgba(0,0,0,.9);animation:rise 1.2s 4.9s ease forwards}
+.l2{animation-delay:5.6s}
+.hint{position:fixed;bottom:calc(84px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font:300 15px "Jost",system-ui,sans-serif;letter-spacing:.08em;color:rgba(255,255,255,.8);opacity:0;z-index:2;pointer-events:none;animation:rise 1s 6s ease forwards}
 @keyframes fade{to{opacity:0}}
 @keyframes rise{to{opacity:1}}
-.go{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:4;font:300 15px "Jost",system-ui,sans-serif;letter-spacing:.2em;text-transform:lowercase;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.45);border-radius:40px;padding:14px 28px;cursor:pointer;opacity:0;animation:rise 2s 11.5s ease forwards;backdrop-filter:blur(6px);white-space:nowrap}
-.pg2{position:fixed;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;font:300 16px "Jost",system-ui,sans-serif;color:#fff;background:radial-gradient(ellipse at 50% 45%,rgba(7,6,12,.72),rgba(7,6,12,.4));opacity:0;pointer-events:none;transition:opacity 1.6s ease}
+.go{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:4;font:300 15px "Jost",system-ui,sans-serif;letter-spacing:.2em;text-transform:lowercase;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.45);border-radius:40px;padding:14px 28px;cursor:pointer;opacity:0;animation:rise 1s 6.4s ease forwards;backdrop-filter:blur(6px);white-space:nowrap}
+.pg2{position:fixed;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;font:300 16px "Jost",system-ui,sans-serif;color:#fff;background:radial-gradient(ellipse at 50% 45%,rgba(7,6,12,.72),rgba(7,6,12,.4));opacity:0;pointer-events:none;transition:opacity .6s ease}
 .pg2.on{opacity:1;pointer-events:auto}
 .pg2 .t{margin:0;letter-spacing:.4em;margin-right:-.4em;text-transform:lowercase;font-size:15px;opacity:.85}
 .row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 12px;max-width:440px}
@@ -42,7 +42,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 .fl.nudge{animation:nudge .4s}
 .card{min-height:6.5em;max-width:460px;text-align:center;font-size:clamp(19px,4.8vw,24px);line-height:1.55}
 .card p{margin:0}
-.p2 .msg,.p2 .go,.p2 .hint{opacity:0!important;pointer-events:none;transition:opacity 1.2s}
+.p2 .msg,.p2 .go,.p2 .hint{opacity:0!important;pointer-events:none;transition:opacity .5s}
 @keyframes nudge{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes leaf{from{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}
@@ -61,13 +61,19 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 .notes p{margin:5px 0;font-size:17px;line-height:1.45;opacity:0;animation:rise .8s forwards}
 .notes .fin{margin-top:24px;text-align:center;font-size:28px}
 .note{max-width:440px;max-height:88vh;overflow:auto;text-align:center}
-.note p{margin:0 0 22px;font-size:clamp(18px,4.6vw,22px);line-height:1.7;letter-spacing:.01em;text-shadow:0 2px 16px rgba(0,0,0,.8);opacity:0;animation:rise 1s forwards}
+.note p{margin:0 0 22px;font-size:clamp(18px,4.6vw,22px);line-height:1.7;letter-spacing:.01em;text-shadow:0 2px 16px rgba(0,0,0,.8);opacity:1}
 .note .fin{margin:30px 0 0;font-size:clamp(28px,8vw,38px);line-height:1.2}
-.ld{width:min(72vw,320px);text-align:center;transition:opacity .5s}
+.note .ps{margin:18px 0 0;font-size:clamp(15px,3.8vw,18px);opacity:0}
+.note .kit{display:block;margin:16px auto 0;max-width:min(60vw,220px);border-radius:14px;opacity:0;animation:rise 1s forwards}
+.ld{display:none;width:min(72vw,320px);text-align:center;transition:opacity .3s}
 .ld .bar,.ld .pct{display:block}
 .back{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));left:14px;font:300 14px "Jost",system-ui,sans-serif;letter-spacing:.14em;text-transform:lowercase;color:rgba(255,255,255,.7);background:none;border:0;padding:10px;cursor:pointer}
 .back:hover{color:#fff}
 .ld .pct{margin-top:14px;font-size:14px;letter-spacing:.08em}
+#pg3{background:radial-gradient(ellipse at 50% 45%,rgba(7,6,12,.95),rgba(7,6,12,.88))}
+.vcard{width:min(88vw,420px);padding:10px;border:1px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(14,10,22,.55);backdrop-filter:blur(10px)}
+.vcard video{display:block;width:100%;border-radius:14px}
+.note .sur{margin-top:22px;font:300 15px "Jost",system-ui,sans-serif;letter-spacing:.16em;text-transform:lowercase;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.5);border-radius:40px;padding:13px 28px;cursor:pointer;opacity:1}
 </style>
 </head>
 <body>
@@ -75,7 +81,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 <div class="veil"></div>
 <div class="msg">
   <p class="a">Happy Birthday</p>
-  <h1 class="n" aria-label="Ivy"><svg id="ivy" viewBox="-10 0 340 210" aria-hidden="true"><path class="s" pathLength="1" style="--t:4.2s;--d:.35s" d="M 42 40 C 62 33 82 33 100 40"/><path class="s" pathLength="1" style="--t:4.5s;--d:.6s" d="M 72 36 C 68 80 64 124 60 154"/><path class="s" pathLength="1" style="--t:5.1s;--d:.35s" d="M 40 156 C 58 150 80 150 98 157"/><path class="s" pathLength="1" style="--t:5.6s;--d:.8s" d="M 120 84 C 122 116 134 138 152 138 C 170 136 182 106 190 82"/><path class="s" pathLength="1" style="--t:6.5s;--d:.8s" d="M 214 84 C 216 116 230 138 250 134 C 270 128 280 100 282 82"/><path class="s" pathLength="1" style="--t:7.3s;--d:1s" d="M 282 82 C 288 130 276 176 240 188 C 214 194 206 170 232 166"/><g id="leaves"></g></svg></h1>
+  <h1 class="n" aria-label="Ivy"><svg id="ivy" viewBox="-10 0 340 210" aria-hidden="true"><path class="s" pathLength="1" style="--t:2s;--d:.25s" d="M 42 40 C 62 33 82 33 100 40"/><path class="s" pathLength="1" style="--t:2.25s;--d:.4s" d="M 72 36 C 68 80 64 124 60 154"/><path class="s" pathLength="1" style="--t:2.65s;--d:.25s" d="M 40 156 C 58 150 80 150 98 157"/><path class="s" pathLength="1" style="--t:2.95s;--d:.5s" d="M 120 84 C 122 116 134 138 152 138 C 170 136 182 106 190 82"/><path class="s" pathLength="1" style="--t:3.5s;--d:.5s" d="M 214 84 C 216 116 230 138 250 134 C 270 128 280 100 282 82"/><path class="s" pathLength="1" style="--t:4.05s;--d:.6s" d="M 282 82 C 288 130 276 176 240 188 C 214 194 206 170 232 166"/><g id="leaves"></g></svg></h1>
   <i class="rule"></i>
   <p class="l">I can’t be there, so I made you this.</p>
   <p class="l l2">Hope your year is full of good laughs.</p>
@@ -83,6 +89,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;background:rad
 <div class="hint">tap anywhere on the garden and the flowers keep growing</div>
 <button class="go" id="go">one more thing →</button>
 <section class="pg2" id="pg2" aria-hidden="true"><button class="back" id="back" aria-label="Back to the garden">← back</button><div class="ld" id="ld"><div class="bar" id="bar"><i></i></div><p class="pct" id="pct">loading… 0%</p></div><div class="note" id="note"></div></section>
+<section class="pg2" id="pg3" aria-hidden="true"><button class="back" id="back3" aria-label="Back to the message">← back</button><div class="vcard"><video id="vid" src="https://static.klipy.com/ii/4493325008d34b7bf8cd6813cd5c1619/00/9b/0boYMtRPdg7HRnB.mp4" muted loop playsinline preload="auto"></video></div></section>
 <script>
 const cv=document.getElementById('c'),ctx=cv.getContext('2d');
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -159,7 +166,7 @@ const glow=(()=>{const k=document.createElement('canvas');k.width=k.height=64;co
 function mk(layer,x,delay){
   const r=Math.random(),type=r<.22?'rose':r<.6?'cos':'sun',sc=SC[layer];
   const nv=SP[type].length;
-  L[layer].push({type,v:Math.floor(Math.random()*nv),x,y:H+6,sc,s:performance.now()+delay,dur:RM?1:rnd(3200,4200),
+  L[layer].push({type,v:Math.floor(Math.random()*nv),x,y:H+6,sc,s:performance.now()+delay,dur:RM?1:rnd(1600,2200),
     h:layer==2?rnd(.14,.4)*H:rnd(.26,.5)*H,bend:rnd(-34,34),ph:rnd(0,TAU),tilt:rnd(-.45,.45),
     r:(type=='sun'?rnd(24,33):type=='cos'?rnd(18,26):rnd(20,30))*sc,lf:rnd(22,34)});
 }
@@ -167,7 +174,7 @@ function seed(){
   L=[[],[],[]];const cx=W/2;
   [[0,46],[1,54],[2,72]].forEach(([l,d])=>{
     const n=Math.max(5,Math.round(W/d));
-    for(let i=0;i<n;i++){const x=(i+rnd(.1,.9))*W/n;mk(l,x,RM?0:600+Math.abs(x-cx)/W*5200+rnd(0,1000)+l*250)}
+    for(let i=0;i<n;i++){const x=(i+rnd(.1,.9))*W/n;mk(l,x,RM?0:200+Math.abs(x-cx)/W*2200+rnd(0,500)+l*120)}
   });
   blades=[];
   for(let l=0;l<2;l++)for(let i=0;i<W/(l?5:3);i++)blades.push({l,x:rnd(-10,W+10),h:l?rnd(26,70):rnd(40,100),ph:rnd(0,TAU),hue:rnd(105,150),li:l?rnd(20,30):rnd(13,22)});
@@ -180,7 +187,7 @@ function resize(){
 function drop(x,y,n){for(let i=0;i<n;i++)fall.push({x:x+rnd(-30,30),y,vy:rnd(18,40),ph:rnd(0,TAU),r:rnd(0,TAU),vr:rnd(-1.5,1.5),s:rnd(6,10),h:[345,350,10,330][i%4]})}
 
 function grass(l,t){
-  const gr=ease(clamp(t/2.6));ctx.lineCap='round';
+  const gr=ease(clamp(t/1.2));ctx.lineCap='round';
   for(const b of blades){if(b.l!=l)continue;
     const h=b.h*gr,sw=Math.sin(t*1.1+b.ph)*8;
     ctx.strokeStyle=col(b.hue,38,b.li);ctx.lineWidth=l?2.6:2.2;
@@ -221,7 +228,7 @@ function frame(now){
   ctx.save();ctx.globalCompositeOperation='lighter';
   for(const o of flies){
     const x=o.x+Math.sin(t*.25*o.s+o.ph)*44,y=o.y+Math.cos(t*.2*o.s+o.ph)*30-((t*6*o.s)%40);
-    ctx.globalAlpha=clamp(t/3)*(.25+.75*Math.abs(Math.sin(t*o.s*1.3+o.ph)));
+    ctx.globalAlpha=clamp(t/1.5)*(.25+.75*Math.abs(Math.sin(t*o.s*1.3+o.ph)));
     ctx.drawImage(glow,x-11,y-11,22,22);
   }
   ctx.restore();
@@ -251,34 +258,30 @@ sp.forEach(p=>{
   }
 });
 {const last=sp[sp.length-1],e=last.getPointAtLength(last.getTotalLength()),g=mkn('g',{transform:`translate(${e.x} ${e.y})`}),b=mkn('g',{class:'bl'});
-  b.style.animationDelay='8.3s';
+  b.style.animationDelay='4.6s';
   for(let i=0;i<5;i++)b.appendChild(mkn('ellipse',{rx:5,ry:9,cy:-8,fill:'#f6b3c4',transform:`rotate(${i*72})`}));
   b.appendChild(mkn('circle',{r:3.5,fill:'#ffe08a'}));g.appendChild(b);lv.appendChild(g)}
 build();resize();requestAnimationFrame(frame);
 
-/* ---------- page 2: loading, then the message ---------- */
+/* ---------- page 2: the message ---------- */
 const pg2=document.getElementById('pg2'),note=document.getElementById('note'),ld=document.getElementById('ld'),bar=document.getElementById('bar'),pct=document.getElementById('pct');
-const PARAS=['Hey Ivy. I’m so sorry I can’t be there for your birthday.','So I made you this little garden instead. It’s your gift, since I couldn’t hand you one in person.','Honestly, I just really like hanging out with you. You’re funny, we laugh at the same dumb jokes, and I always wish the time went slower.','Hope you have a great day and eat way too much cake.'];
-const STOPS=[[0,0],[.8,34],[1.4,34],[2.2,71],[2.9,71],[3.6,99],[5.6,99],[6,100]];
-const pctAt=t=>{for(let i=1;i<STOPS.length;i++){const[a,x]=STOPS[i-1],[b,y]=STOPS[i];if(t<=b)return x+(y-x)*clamp((t-a)/(b-a))}return 100};
+const PARAS=['Hey Ivy! Happy Birthday! ❤️','I wish I could be there to celebrate with you, but since I can\'t, I made you this little garden instead. Think of it as a small birthday gift from me.','I hope you have the loveliest day, eat lots of cake and make some beautiful memories. I genuinely enjoy spending time with you, laughing at our silly jokes and all the little moments that somehow never feel long enough.'];
 function showNote(){
-  ld.style.opacity=0;
-  setTimeout(()=>{
-    ld.style.display='none';let d=.2;
-    PARAS.forEach(t=>{const p=document.createElement('p');p.textContent=t;p.style.animationDelay=d+'s';note.appendChild(p);d+=.8+t.length*.015});
-    const f=document.createElement('p');f.className='fin';f.textContent='Happy birthday, Ivy.';f.style.animationDelay=d+'s';note.appendChild(f);
-    for(let k=0;k<40;k++)setTimeout(()=>drop(rnd(0,W),-10,1),(d+.3)*1000+k*140);
-  },550);
+  ld.style.display='none';
+  PARAS.forEach(t=>{const p=document.createElement('p');p.textContent=t;note.appendChild(p)});
+  const f=document.createElement('p');f.className='fin';f.textContent='Have a really good one.';note.appendChild(f);
+  const q=document.createElement('button');q.className='sur';q.textContent='click here for a surprise';q.onclick=openSurprise;note.appendChild(q);
+  for(let k=0;k<40;k++)setTimeout(()=>drop(rnd(0,W),-10,1),300+k*140);
 }
 document.getElementById('back').onclick=()=>{document.body.classList.remove('p2');pg2.classList.remove('on');pg2.setAttribute('aria-hidden','true')};
+const pg3=document.getElementById('pg3'),vid=document.getElementById('vid');
+function openSurprise(){pg3.classList.add('on');pg3.removeAttribute('aria-hidden');vid.currentTime=0;vid.play().catch(()=>{})}
+document.getElementById('back3').onclick=()=>{pg3.classList.remove('on');pg3.setAttribute('aria-hidden','true');vid.pause()};
 let opened=false;
 document.getElementById('go').onclick=()=>{
   document.body.classList.add('p2');pg2.classList.add('on');pg2.removeAttribute('aria-hidden');
-  if(opened)return;opened=true;const t0=performance.now()+1200;
-  (function step(now){const t=(now-t0)/1000;if(t<0){requestAnimationFrame(step);return}
-    const v=pctAt(t);bar.firstElementChild.style.width=v+'%';
-    pct.textContent=(v>=99&&t<5.9)?(t>4.8?'99% \u00b7 hmm, this is taking a while\u2026':'99% \u00b7 almost there\u2026'):'loading\u2026 '+Math.round(v)+'%';
-    if(t<6.1)requestAnimationFrame(step);else showNote()})(performance.now());
+  if(opened)return;opened=true;
+  showNote();
 };
 </script>
 </body>
